@@ -28,7 +28,7 @@
 		loop
 		muted
 		playsinline
-		class="fixed top-0 left-0 -z-5 h-full w-full object-cover opacity-50"
+		class="-z-5 fixed left-0 top-0 h-full w-full object-cover opacity-50"
 	>
 		<source src="src/lib/assets/background.mp4" type="video/mp4" />
 	</video>
@@ -59,93 +59,6 @@
 		</div>
 	{/if}
 	<Leaderboard />
-	<!-- Leaderboard Section -->
-	<div class="section leaderboard">
-		<h2>Leaderboard</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Ranking</th>
-					<th>Name</th>
-					<th>Score</th>
-					<th>Wallet Age</th>
-					<th>Region</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="highlight-gold">
-					<td>#1</td>
-					<td>David Stampson</td>
-					<td>5800</td>
-					<td>10Y 2M</td>
-					<td>USA</td>
-				</tr>
-				<tr class="highlight-silver">
-					<td>#2</td>
-					<td>Evan Stephen</td>
-					<td>4200</td>
-					<td>8Y 4M</td>
-					<td>UK</td>
-				</tr>
-				<tr class="highlight-bronze">
-					<td>#3</td>
-					<td>Peter Parker</td>
-					<td>3700</td>
-					<td>7Y 6M</td>
-					<td>CANADA</td>
-				</tr>
-				<tr>
-					<td>#4</td>
-					<td>Hiroshi Tanaka</td>
-					<td>3450</td>
-					<td>13Y 5M</td>
-					<td>JAPAN</td>
-				</tr>
-				<tr>
-					<td>#5</td>
-					<td>Oliver Thompson</td>
-					<td>3300</td>
-					<td>12Y 6M</td>
-					<td>UK</td>
-				</tr>
-				<tr>
-					<td>#6</td>
-					<td>Evan Stephen</td>
-					<td>4200</td>
-					<td>8Y 4M</td>
-					<td>UK</td>
-				</tr>
-				<tr>
-					<td>#7</td>
-					<td>Peter Parker</td>
-					<td>3700</td>
-					<td>7Y 6M</td>
-					<td>CANADA</td>
-				</tr>
-				<tr>
-					<td>#8</td>
-					<td>Hiroshi Tanaka</td>
-					<td>3450</td>
-					<td>13Y 5M</td>
-					<td>JAPAN</td>
-				</tr>
-				<tr>
-					<td>#9</td>
-					<td>Oliver Thompson</td>
-					<td>3300</td>
-					<td>12Y 6M</td>
-					<td>UK</td>
-				</tr>
-				<tr>
-					<td>#10</td>
-					<td>Oliver Thompson</td>
-					<td>3300</td>
-					<td>12Y 6M</td>
-					<td>UK</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 </div>
 
 <style>

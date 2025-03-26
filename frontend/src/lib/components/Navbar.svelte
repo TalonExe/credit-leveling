@@ -7,7 +7,6 @@
 		<a href="/dashboard" class="hover:underline">Home</a>
 		<a href="/profile" class="hover:underline">Profile</a>
 		<a href="/missions" class="hover:underline">Missions</a>
-		<a href="/dashboard" class="hover:underline">Borrowing & Lending</a>
 	</div>
 	<WalletButton />
 </nav>

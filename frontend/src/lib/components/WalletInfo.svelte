@@ -15,8 +15,62 @@
 	});
 </script>
 
-<div class="flex w-fit flex-col items-center justify-center rounded-3xl bg-blue-700 px-4 py-16">
+<div class="wallet-info-container">
 	<h2>Wallet Information</h2>
-	<p><strong>Wallet Address:</strong> {walletAddress}</p>
-	<p><strong>Credit Score:</strong> {creditScore}</p>
+	<div class="info-grid">
+		<div class="info-item">
+			<span class="label">Wallet Address:</span>
+			<span class="value"> {walletAddress}</span>
+		</div>
+		<div class="info-item">
+			<span class="label">Credit Score:</span>
+			<span class="value highlight-gold">{creditScore}</span>
+		</div>
+	</div>
 </div>
+
+<style>
+	.wallet-info-container {
+		background: rgba(0, 0, 0, 0.6);
+		padding: 20px;
+		border-radius: 10px;
+		max-width: 90%;
+		margin: 20px auto;
+		color: white;
+	}
+
+	h2 {
+		text-align: center;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	.info-grid {
+		display: grid;
+		gap: 15px;
+	}
+
+	.info-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.info-item:last-child {
+		border-bottom: none;
+	}
+
+	.label {
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	.value {
+		font-weight: bold;
+	}
+
+	.highlight-gold {
+		color: gold;
+	}
+</style>

@@ -3,9 +3,9 @@
 	import { completeTask, getUsers, isTaskCompleted } from '../utils/contractUtils'; // Import your contract interaction functions
 
 	let tasks = [
-		{ id: 1, description: 'Bind Google Account', points: 150 },
-		{ id: 2, description: 'Bind Facebook Account', points: 10 },
-		{ id: 3, description: 'Interact with protocol', points: 20 }
+		{ id: 1, description: 'Bind Google Account', points: 50 },
+		{ id: 2, description: 'Bind Facebook Account', points: 100 },
+		{ id: 3, description: 'Interact with protocol', points: 30 }
 	];
 
 	let users = [];
@@ -51,7 +51,7 @@
 			{#each tasks as task (task.id)}
 				<li class="relative">
 					<div
-						class="diamond absolute top-6 left-1/2 z-2 h-12 w-12 -translate-x-1/2 transform bg-cover bg-center"
+						class="diamond z-2 absolute left-1/2 top-6 h-12 w-12 -translate-x-1/2 transform bg-cover bg-center"
 						style="background-image:url('src/lib/assets/smallbackground.png')"
 					></div>
 					<div

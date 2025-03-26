@@ -55,18 +55,21 @@
 		<table class="leaderboard-table">
 			<thead>
 				<tr>
-					<th>Rank</th>
+					<th>Ranking</th>
 					<th>Address</th>
 					<th>Score</th>
 				</tr>
 			</thead>
 			<tbody>
 				{#each leaderboard as user (user.address)}
-					<tr>
-						<td>{user.rank}</td>
+					<tr
+						class={user.rank <= 3
+							? `highlight-${user.rank === 1 ? 'gold' : user.rank === 2 ? 'silver' : 'bronze'}`
+							: ''}
+					>
+						<td>#{user.rank}</td>
 						<td>{user.address.slice(0, 6)}...{user.address.slice(-4)}</td>
 						<td>{user.score.toString()}</td>
-						<!-- Convert BigInt to string for display -->
 					</tr>
 				{/each}
 			</tbody>
@@ -76,43 +79,47 @@
 
 <style>
 	.leaderboard-container {
-		max-width: 800px;
-		margin: 0 auto;
+		background: rgba(0, 0, 0, 0.6);
 		padding: 20px;
-		font-family: Arial, sans-serif;
+		border-radius: 10px;
+		max-width: 90%;
+		margin: 20px auto;
 	}
 
 	h2 {
 		text-align: center;
-		color: #333;
+		color: white;
 		margin-bottom: 20px;
 	}
 
 	.leaderboard-table {
 		width: 100%;
 		border-collapse: collapse;
-		background-color: #fff;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}
 
 	.leaderboard-table th,
 	.leaderboard-table td {
-		padding: 12px 15px;
-		text-align: left;
-		border-bottom: 1px solid #ddd;
+		padding: 10px;
+		border-bottom: 1px solid white;
+		color: white;
 	}
 
 	.leaderboard-table th {
-		background-color: #f4f4f4;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.highlight-gold {
 		font-weight: bold;
-		color: #333;
+		color: gold;
 	}
 
-	.leaderboard-table tbody tr:hover {
-		background-color: #f9f9f9;
+	.highlight-silver {
+		font-weight: bold;
+		color: silver;
 	}
 
-	.leaderboard-table td {
-		color: #555;
+	.highlight-bronze {
+		font-weight: bold;
+		color: brown;
 	}
 </style>

@@ -83,19 +83,13 @@ cd frontend
 bun install
 ```
 
-3. Create a `.env` file in the frontend directory with:
-
-```
-PUBLIC_CONTRACT_ADDRESS=your_deployed_contract_address
-```
-
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 bun run dev
 ```
 
-5. Open your browser and navigate to `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## Usage
 
